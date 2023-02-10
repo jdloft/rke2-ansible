@@ -1,0 +1,32 @@
+---
+namespace: rancherfederal
+name: rke2
+version: 1.0.0
+readme: README.md
+description: RKE2 cluster provisioning via Ansible.
+
+authors:
+  - Dave Vigil (https://github.com/dgvigil)
+  - Brandon Gulla (https://github.com/bgulla)
+  - Rancher Federal (https://rancherfederal.com/)
+  - Mike D'Amato (https://github.com/mdamato)
+
+license:
+  - Apache-2.0
+
+license_file: LICENSE
+tags: [infrastructure, linux]
+dependencies: {}
+repository: https://github.com/rancherfederal/rke2-ansible
+issues: https://github.com/rancherfederal/rke2-ansible/issues
+
+build_ignore:
+  - "*.retry"
+  - .cache/*
+  - venv/*
+  - test_inventory*
+  - rke2-images.linux-amd64.tar.gz
+  - rke2.linux-amd64.tar.gz
+  - tarball_install/*
+  - testing
+  - .github
